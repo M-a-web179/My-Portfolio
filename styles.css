@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    color: white;
+}
+
+/* Navigation Bar */
+header {
+    background: rgba(20, 20, 20, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffcc00;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff8a00, #da1b60);
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #ffcc00;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.5);
+}
+
+/* Sections */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+/* Project Cards */
+.project-card {
+    background: #1e1e1e;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+form input, form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #222;
+    color: white;
+}
+
+button {
+    background: #ffcc00;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #e6b800;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+}
