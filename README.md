@@ -29,6 +29,7 @@ git clone https://github.com/M-a-web179/My-Portfolio.git
 
 
  Usage
+ To access the live version: https://github.com/M-a-web179/My-Portfolio/deployments/github-pages
 
 Scroll through the sections to explore About Me, Skills, Projects, and Contact.
 
