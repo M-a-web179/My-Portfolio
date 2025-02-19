@@ -41,5 +41,4 @@ Resize the browser window to see responsive design in action.
 │──  index.html           # Main HTML file  
 │──  styles.css           # Custom styles and animations  
 │──  script.js            # JavaScript for interactivity  
-│──  assets               # Images and icons  
 │──  README.md            # Project documentation  
